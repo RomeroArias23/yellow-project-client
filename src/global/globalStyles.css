@@ -1,0 +1,10 @@
+/* src/global/globalStyles.css */
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+

@@ -1,0 +1,112 @@
+.container {
+    width: 400px;
+    height: auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(150deg, rgba(0,0,0,0.80015756302521) 50%, rgba(244,230,3,1) 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align items vertically */
+    border-radius: 15px;
+}
+
+.box {
+    width: 100%; /* Take up full width of the container */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 15px;
+    text-align: center; /* Center align text */
+    color:#eee
+}
+
+.addressee, .letter-box, .btn {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.addressee input, .letter-box textarea, .btn button {
+    width: 90%; /* Take up most of the parent width */
+    padding: 20px 10px; /* Adjust padding for consistent look */
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    opacity: 40%;
+}
+
+.letter-box textarea {
+    height: 200px;
+}
+
+.button{
+    display: flex; /* Use flex to center button content */
+    justify-content: center; /* Center button content horizontally */
+    width: 100%; /* Ensure the button container takes full width */
+    align-items: center;
+    appearance: none;
+}
+
+.btn  {
+    display: flex; /* Use flex to center button content */
+    justify-content: center; /* Center button content horizontally */
+    width: 100%; /* Ensure the button container takes full width */
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: flex; /* Ensure button is flex */
+    height: 48px;
+    justify-content: center; /* Center button content */
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: center; /* Center text */
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    width: auto; /* Adjust width to auto to fit the content */
+}
+
+.btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
