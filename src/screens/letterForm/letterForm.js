@@ -18,7 +18,7 @@ function LetterForm() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('/letters', {
+            const response = await fetch('https://yellow-project.onrender.com/letters', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ function LetterForm() {
             <div className='box'>
                 <h3>Escribe un mensaje que no hayas podido enviar</h3>
                 <form onSubmit={handleSubmit} className='form'>
-                    <div class='addressee'>
+                    <div className='addressee'>
                         <label htmlFor='addressee'></label>
                         <input
                             type='text'
@@ -57,7 +57,7 @@ function LetterForm() {
                             required
                         />
                     </div>
-                    <div class='letter-box'>
+                    <div className='letter-box'>
                         <label htmlFor='letter'></label>
                         <textarea
                             id='letter'
@@ -70,7 +70,7 @@ function LetterForm() {
                         />
                     </div>
                     <div className='button'>
-                        <button type='submit' class='btn' id='send'>Enviar</button>
+                        <button type='submit' className='btn' id='send'>Enviar</button>
                     </div>
                 </form>
             </div>
