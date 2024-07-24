@@ -25,16 +25,21 @@ function LetterForm() {
                 },
                 body: JSON.stringify(formData)
             });
+    
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            const result = await response.json();
+    
+            const result = await response.json().catch(() => {
+                throw new Error('Invalid JSON response');
+            });
+    
             console.log('Success:', result);
             setFormData({ addressee: '', letter: '' });
             alert("Letter successfully added!");
         } catch (error) {
-            console.error('Error:', error);
-            alert('Failed to add letter.');
+            console.error('Error:', error.message);
+            alert(`Failed to add letter: ${error.message}`);
         }
     };
 
