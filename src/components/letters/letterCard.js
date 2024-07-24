@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config/apiConfig';
 import SearchBar from './searchBar';
 import LettersDisplay from '../letters/letterDisplay';
 import useFetchData from '../../hooks/useFetchData';
@@ -16,7 +17,7 @@ function LetterCard() {
     const handleSearch = async (addressee) => {
         if (addressee) {
             try {
-                const response = await axios.get(`http://localhost:3000/letters/search?addressee=${addressee}`);
+                const response = await axios.get(`${API_BASE_URL}/letters/search?addressee=${addressee}`);
                 setFilteredLetters(response.data);
             } catch (error) {
                 console.error('Failed to fetch filtered letters', error);
