@@ -36,7 +36,10 @@ const LettersDisplay = ({ letters }) => {
                             key={index}
                             id={`card-${index}`}
                             onClick={() => downloadCard(`card-${index}`, `Letter-${index}.png`)}
-                            style={{ cursor: 'pointer' }} // Optional: Change cursor to pointer for better UX
+                            style={{
+                                cursor: 'pointer',
+                                backgroundImage: `url('https://i.ibb.co/QN0t10P/yellow-texture.jpg')`
+                            }} // Inline style for background image
                         >
                             <div className="waves_mg-bottom-16">
                                 <h1 className="waves_heading-3-no-margins">Para: {letter.addressee}</h1>
@@ -55,5 +58,6 @@ const LettersDisplay = ({ letters }) => {
 };
 
 export default LettersDisplay;
+
 
 
