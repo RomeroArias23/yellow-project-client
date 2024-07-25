@@ -37,7 +37,6 @@ function LetterCard() {
             </div>
             <div>
                 {loadingLetters ? <p>Loading letters...</p> : <LettersDisplay letters={filteredLetters} />}
-                {error && <p className="error">{error}</p>}  // Display error message if present
             </div>
         </div>
     );

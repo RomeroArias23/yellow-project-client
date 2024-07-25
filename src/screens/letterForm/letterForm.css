@@ -1,8 +1,7 @@
 .container {
     width: 400px;
     height: auto;
-    background: rgb(0,0,0);
-    background: linear-gradient(150deg, rgba(0,0,0,0.80015756302521) 50%, rgba(244,230,3,1) 100%);
+    background: url('../../global/yellow-texture.jpg');
     position: absolute;
     top: 50%;
     left: 50%;

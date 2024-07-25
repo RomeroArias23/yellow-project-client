@@ -40,6 +40,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.208;
+    text-align: left;
 }
 
 .waves_mg-bottom-16 {
@@ -48,15 +49,33 @@
 }
 
 .waves_tile-features-6 {
+    width: 280px;
+    height: 320px;
     grid-row-gap: 16px;
-    background: rgb(0,0,0);
-    background: linear-gradient(150deg, rgba(0,0,0,0.80015756302521) 50%, rgba(244,230,3,1) 100%);
+    background: url('../../global/yellow-texture.jpg'); /* Update this path if necessary */
+    background-size: cover; /* Ensures the image covers the card */
+    background-position: center; /* Centers the image in the card */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     flex-direction: column;
     align-items: flex-start;
     padding: 36px 32px;
     display: flex;
-    position: relative; /* Add this line */
+    position: relative;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 10px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.watermark-p {
+    font-size: 8px; /* Adjust font size as needed */
+    color: rgba(255, 255, 255, 0.8); 
 }
 
 p {

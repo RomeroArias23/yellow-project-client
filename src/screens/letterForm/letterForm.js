@@ -17,13 +17,23 @@ function LetterForm() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        
+        // Transform addressee to Title Case
+        const formattedData = {
+            ...formData,
+            addressee: formData.addressee
+                .split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+                .join(' ')
+        };
+
         try {
             const response = await fetch('https://yellow-project-api.onrender.com/letters', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(formattedData)
             });
 
             if (!response.ok) {
@@ -57,7 +67,6 @@ function LetterForm() {
                             placeholder='para:'
                             value={formData.addressee}
                             onChange={handleChange}
-                            pattern='^[A-Z][a-z]*$'
                             title='Escribe el nombre de la persona a quien diriges tu carta'
                             required
                         />

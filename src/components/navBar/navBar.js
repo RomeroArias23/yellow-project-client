@@ -7,13 +7,16 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link to="/" className='home'>{'{ Yellow } '}</Link>
+          <Link to="/" className='home'>{'{ Yellow }'}</Link>
         </li>
         <li>
-          <Link to="/letters">Cartas</Link>
+          <Link to="/cartas">Cartas</Link>
         </li>
         <li>
-          <Link to="/create">Escribe</Link>
+          <Link to="/escribe">Escribe</Link>
+        </li>
+        <li>
+          <Link to="/créditos">Créditos</Link>
         </li>
       </ul>
     </nav>
