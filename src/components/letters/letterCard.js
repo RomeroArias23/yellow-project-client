@@ -18,7 +18,8 @@ function LetterCard() {
         if (addressee) {
             try {
                 console.log('Searching for:', addressee);
-                const response = await axios.get('/letters/search?addressee=${addressee}');
+                const url = `${API_BASE_URL}/letters/search?addressee=${addressee}`;
+                const response = await axios.get(url);
                 console.log('Search results:', response.data);
                 setFilteredLetters(response.data);
                 setError('');
@@ -31,6 +32,7 @@ function LetterCard() {
             setFilteredLetters(letters);
         }
     };
+    
 
     return (
         <div>
