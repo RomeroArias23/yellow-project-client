@@ -18,22 +18,22 @@ function LetterForm() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('https://yellow-project.onrender.com/letters', {
+            const response = await fetch('https://yellow-project-api.onrender.com/letters', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(formData)
             });
-    
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-    
+
             const result = await response.json().catch(() => {
                 throw new Error('Invalid JSON response');
             });
-    
+
             console.log('Success:', result);
             setFormData({ addressee: '', letter: '' });
             alert("Letter successfully added!");
