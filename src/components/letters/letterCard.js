@@ -18,7 +18,7 @@ function LetterCard() {
         if (addressee) {
             try {
                 console.log('Searching for:', addressee);
-                const response = await axios.get(`/letters/search?addressee=${addressee}`);
+                const response = await axios.get('https://yellow-project-api.onrender.com/letters/search?addressee=${addressee}');
                 console.log('Search results:', response.data);
                 setFilteredLetters(response.data);
                 setError('');
