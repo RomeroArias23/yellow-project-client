@@ -8,7 +8,7 @@ import './letterCard.css';
 function LetterCard() {
     const { data: letters, loading: loadingLetters } = useFetchData('/letters');
     const [filteredLetters, setFilteredLetters] = useState([]);
-    const [error, setError] = useState('');  // Manage error state
+    const [error, setError] = useState('');  
 
     useEffect(() => {
         setFilteredLetters(letters); 
@@ -17,13 +17,15 @@ function LetterCard() {
     const handleSearch = async (addressee) => {
         if (addressee) {
             try {
+                console.log('Searching for:', addressee);
                 const response = await axios.get(`/letters/search?addressee=${addressee}`);
+                console.log('Search results:', response.data);
                 setFilteredLetters(response.data);
-                setError('');  // Reset error on successful fetch
+                setError('');
             } catch (error) {
                 console.error('Failed to fetch filtered letters', error);
-                setError('Failed to fetch data');  // Set error message for the UI
-                setFilteredLetters([]); 
+                setError('Failed to fetch data');
+                setFilteredLetters([]);
             }
         } else {
             setFilteredLetters(letters);
@@ -38,8 +40,10 @@ function LetterCard() {
             <div>
                 {loadingLetters ? <p>Loading letters...</p> : <LettersDisplay letters={filteredLetters} />}
             </div>
+            {error && <p className="error">{error}</p>}
         </div>
     );
 }
 
 export default LetterCard;
+

@@ -10,13 +10,13 @@ function Navbar() {
           <Link to="/" className='home'>{'{ Yellow }'}</Link>
         </li>
         <li>
-          <Link to="/cartas">Cartas</Link>
+          <Link to="/letters">Cartas</Link>
         </li>
         <li>
-          <Link to="/escribe">Escribe</Link>
+          <Link to="/write">Escribe</Link>
         </li>
         <li>
-          <Link to="/créditos">Créditos</Link>
+          <Link to="/credits">Créditos</Link>
         </li>
       </ul>
     </nav>
