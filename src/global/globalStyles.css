@@ -4,7 +4,12 @@
 }
 
 body {
+  padding-top: 100px;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  display: grid;
+  height: 100%;
+  grid-template: 1fr/100%;
+  place-items: center;
 }
 

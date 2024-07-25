@@ -38,7 +38,7 @@ function LetterCard() {
                 <SearchBar className='searchbar' onSearch={handleSearch} />
             </div>
             <div>
-                {loadingLetters ? <p>Loading letters...</p> : <LettersDisplay letters={filteredLetters} />}
+                {loadingLetters ? <p>Buscando cartas...</p> : <LettersDisplay letters={filteredLetters} />}
             </div>
             {error && <p className="error">{error}</p>}
         </div>
