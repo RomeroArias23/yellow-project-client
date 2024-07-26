@@ -1,40 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import SearchBar from './searchBar';
 import LettersDisplay from '../letters/letterDisplay';
 import useFetchData from '../../hooks/useFetchData';
 import './letterCard.css';
 
-const API_BASE_URL = process.env.API_BASE_URL;
-
 function LetterCard() {
     const { data: letters, loading: loadingLetters } = useFetchData('/letters');
     const [filteredLetters, setFilteredLetters] = useState([]);
-    const [error, setError] = useState('');  
+    const [error, setError] = useState('');
 
     useEffect(() => {
-        setFilteredLetters(letters); 
+        setFilteredLetters(letters);
     }, [letters]);
 
-    const handleSearch = async (addressee) => {
+    const handleSearch = (addressee) => {
         if (addressee) {
-            try {
-                console.log('Searching for:', addressee);
-                const url = `${API_BASE_URL}/letters/search?addressee=${addressee}`;
-                const response = await axios.get(url);
-                console.log('Search results:', response.data);
-                setFilteredLetters(response.data);
-                setError('');
-            } catch (error) {
-                console.error('Failed to fetch filtered letters', error);
-                setError('Failed to fetch data');
-                setFilteredLetters([]);
-            }
+            const filtered = letters.filter(letter => 
+                letter.addressee.toLowerCase().includes(addressee.toLowerCase())
+            );
+            setFilteredLetters(filtered);
         } else {
             setFilteredLetters(letters);
         }
     };
-    
 
     return (
         <div>
@@ -50,4 +38,5 @@ function LetterCard() {
 }
 
 export default LetterCard;
+
 

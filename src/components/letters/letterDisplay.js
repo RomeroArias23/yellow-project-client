@@ -6,7 +6,7 @@ const YELLOW = 'YELLOW';
 
 const LettersDisplay = ({ letters }) => {
     if (!letters.length) {
-        return <p>Loading letters...</p>;
+        return <p>Biscando cartas...</p>;
     }
 
     const downloadCard = async (elementId, fileName) => {
