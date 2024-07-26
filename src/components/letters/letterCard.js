@@ -5,6 +5,8 @@ import LettersDisplay from '../letters/letterDisplay';
 import useFetchData from '../../hooks/useFetchData';
 import './letterCard.css';
 
+const API_BASE_URL = process.env.API_BASE_URL;
+
 function LetterCard() {
     const { data: letters, loading: loadingLetters } = useFetchData('/letters');
     const [filteredLetters, setFilteredLetters] = useState([]);
