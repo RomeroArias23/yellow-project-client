@@ -15,7 +15,7 @@ function CreditsScreen() {
       </a>
       <div className="credits">
         <h2>import { YELLOW } from './CVLTVRE'</h2>
-        <p><strong>Artista de la portada y diseñador conceptual del proyecto:</strong> Judá Inacuá @heey.jude</p>
+        <p><strong>Artista de la portada y diseñador conceptual del proyecto:</strong> Judá Inacua @heey.yude</p>
         <p><strong>Compositor y letrista:</strong> Julio César Anzures</p>
         <p><strong>Arreglista de batería:</strong> José Roberto Torres Martínez</p>
         <p><strong>Arreglista de cuerdas:</strong> Diego Romero</p>
