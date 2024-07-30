@@ -33,6 +33,15 @@ code {
     font-size: 0.9rem;
 }
 
+a {
+    text-decoration: none;
+    text-transform: none;
+    color:#f4e603;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 90%;
