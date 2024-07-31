@@ -1,70 +1,54 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto { YELLOW }
 
-## Available Scripts
+## Descripción del Proyecto
+El proyecto "{ YELLOW }" está inspirado en "The Unsent Project" y busca recopilar mensajes de texto no enviados a primeros amores. Esta aplicación web permite a los usuarios expresar de manera anónima aquellos mensajes que no pudieron enviar en su momento. Además, el proyecto ayuda a promocionar una canción producida e interpretada por mí, que habla acerca de una relación perdida.
 
-In the project directory, you can run:
+### Visita el Proyecto
+Puedes ver y participar en el proyecto aquí: [https://yellow-project.onrender.com](https://yellow-project.onrender.com)
 
-### `npm start`
+## ¿Cómo Participar?
+Puedes participar en el proyecto de las siguientes maneras:
+- **Escribir una Carta**: Visita nuestro sitio y envía tu mensaje anónimo.
+- **Contribuir al Código**: Si eres desarrollador y deseas contribuir al proyecto, puedes proponer cambios o mejoras en el código.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías Utilizadas
+Este proyecto se desarrolla utilizando las siguientes tecnologías y bibliotecas:
+- React 18.3.1
+- Axios 1.7.2 para las llamadas API.
+- React Router Dom 6.25.1 para la navegación.
+- Testing Library para pruebas de componentes React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencias
+Aquí se listan las principales dependencias del proyecto:
+- `@fvilers/disable-react-devtools`: Utilizado para deshabilitar React DevTools en producción.
+- `@testing-library/jest-dom`, `@testing-library/react`, `@testing-library/user-event`: Utilizados para pruebas unitarias y de integración.
+- `axios`: Usado para realizar solicitudes HTTP a la API.
+- `html-to-image`: Utilizado para convertir elementos HTML en imágenes.
+- `react`, `react-dom`: Bibliotecas principales de React para construir la interfaz de usuario.
+- `react-router-dom`: Utilizado para gestionar rutas en la aplicación.
+- `react-scripts`, `web-vitals`: Herramientas y scripts para crear y optimizar la aplicación React.
 
-### `npm test`
+## Contacto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Si tienes preguntas sobre el proyecto, deseas colaborar o necesitas más información, no dudes en contactarme vía email a  arias.dromero@gmail.com
 
-### `npm run build`
+## Instalación Local
+Para probar este proyecto en tu entorno local, sigue estos pasos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clonar el repositorio**:
+   ```bash
+   git clone URL_DEL_REPOSITORIO
+   cd client
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   **Instalar las dependencias**:
+    
+    
+    `npm install` 
+    
+-   **Ejecutar el proyecto**:
+    
+    
+    `npm start` 
+    
+    Esto iniciará el servidor de desarrollo y abrirá la aplicación en  `http://localhost:3000`.
