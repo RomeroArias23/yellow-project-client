@@ -45,7 +45,7 @@ const LettersDisplay = ({ letters }) => {
                             }}
                         >
                             <div className="waves_mg-bottom-16">
-                                <h1 className="waves_heading-3-no-margins">Para: {letter.addressee}</h1>
+                                <h1 className="waves_heading-3-no-margins">A la persona que no le pude escribir por última vez</h1>
                                 <p>{letter.letter}</p>
                                 <p className="date">Fecha: {letter.date}</p>
                             </div>
