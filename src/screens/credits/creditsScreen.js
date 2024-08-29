@@ -18,8 +18,8 @@ function CreditsScreen() {
         <h2>import { YELLOW } from './CVLTVRE'</h2>
         <p><strong>Artista de la portada y diseñador conceptual del proyecto:</strong> Judá Inacua @heey.yude</p>
         <p><strong>Compositor y letrista:</strong> Julio César Anzures</p>
-        <p><strong>Arreglista de batería:</strong> José Roberto Torres Martínez</p>
-        <p><strong>Arreglista de cuerdas:</strong> Diego Romero</p>
+        <p><strong>Arreglo de batería:</strong> José Roberto Torres Martínez</p>
+        <p><strong>Arreglo de cuerdas:</strong> Diego Romero</p>
         <p><strong>Baterista:</strong> @jampii_drummer</p>
         <p><strong>Guitarrista:</strong> Javier Chávez</p>
         <p><strong>Productor musical, ingeniero de mezcla y master, arreglista:</strong> Sebastián Almaraz Coria</p>

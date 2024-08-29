@@ -60,7 +60,6 @@
     padding: 36px 32px;
     display: flex;
     position: relative;
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -88,6 +87,10 @@ p {
     left: 150px;
     font-size: 15px;
     font-style: italic;
+}
+
+.waves_mg-bottom-16 h1 {
+    font-size: 20px;
 }
 
 .waves_grid-features-6 {
