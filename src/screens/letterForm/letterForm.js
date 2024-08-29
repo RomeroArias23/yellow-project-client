@@ -56,7 +56,7 @@ function LetterForm() {
     return (
         <div className='container'>
             <div className='box'>
-                <h3>A la persona que no le pude escribir por última vez</h3>
+                <h3>deja un mensaje a la persona que no le pudiste escribir</h3>
                 <form onSubmit={handleSubmit} className='form'>
                     <div className='addressee'>
                         <label htmlFor='addressee'></label>
