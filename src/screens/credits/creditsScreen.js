@@ -1,5 +1,6 @@
 import React from 'react';
 import './creditsScreen.css';
+import yellowPlayerImage from '../credits/yellow-player.png';
 
 const YELLOW = 'YELLOW';
 
@@ -8,7 +9,7 @@ function CreditsScreen() {
     <div className="credits-container">
       <a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=N5ux69HXRpCRnnGbAfXJ8A" target="_blank" rel="noopener noreferrer">
         <img 
-          src="https://i.ibb.co/jL7Cz0f/yellow-player.png" 
+          src={yellowPlayerImage}
           alt="Portada de import { YELLOW }" 
           className="credits-image"
         />
