@@ -51,7 +51,7 @@ function LetterForm() {
             // Show SweetAlert2 with a clickable link
             Swal.fire({
                 title: 'Gracias por enviar tu carta!',
-                html: `Puedes descargarla como imagen para compartirla y escuchar la canción <br/><a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw" target="_blank" rel="noopener noreferrer">{ Yellow }</a>`,
+                html: `Puedes buscar y descargar tu mensaje en la pestaña de Cartas. También puedes escuchar la canción <br/><a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw" target="_blank" rel="noopener noreferrer">{ Yellow }</a>`,
                 icon: 'success'
             });
         } catch (error) {

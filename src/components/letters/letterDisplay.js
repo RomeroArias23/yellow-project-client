@@ -45,7 +45,7 @@ const LettersDisplay = ({ letters }) => {
                             }}
                         >
                             <div className="waves_mg-bottom-16">
-                                <h1 className="waves_heading-3-no-margins">el mensaje que no envié:</h1>
+                                <h1 className="waves_heading-3-no-margins">el mensaje que nunca envié:</h1>
                                 <p>{letter.letter}</p>
                                 <p className="date">fecha: {letter.date}</p>
                             </div>

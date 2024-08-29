@@ -16,15 +16,15 @@ function CreditsScreen() {
       </a>
       <div className="credits">
         <h2>import { YELLOW } from './CVLTVRE'</h2>
-        <p><strong>Artista de la portada y diseñador conceptual del proyecto:</strong> Judá Inacua @heey.yude</p>
-        <p><strong>Compositor y letrista:</strong> Julio César Anzures</p>
+        <p><strong>Portada y diseño conceptual del proyecto:</strong> Judá Inacua @heey.yude</p>
+        <p><strong>Letra y composición:</strong> Julio César Anzures y José Roberto Torres Martínez</p>
         <p><strong>Arreglo de batería:</strong> José Roberto Torres Martínez</p>
         <p><strong>Arreglo de cuerdas:</strong> Diego Romero</p>
-        <p><strong>Baterista:</strong> @jampii_drummer</p>
-        <p><strong>Guitarrista:</strong> Javier Chávez</p>
-        <p><strong>Productor musical, ingeniero de mezcla y master, arreglista:</strong> Sebastián Almaraz Coria</p>
-        <p><strong>Voz secundaria y vocal coach de grabación:</strong> Sharon Cuevas</p>
-        <p><strong>Intérprete y artista:</strong> Romero Arias</p>
+        <p><strong>Batería:</strong> @jampii_drummer</p>
+        <p><strong>Guitarra:</strong> Javier Chávez</p>
+        <p><strong>Producción musical, mezcla, master y arreglos:</strong> Sebastián Almaraz Coria</p>
+        <p><strong>Voz y vocal coaching:</strong> Sharon Cuevas</p>
+        <p><strong>Interpretación:</strong> Romero Arias</p>
       </div>
     </div>
   )
