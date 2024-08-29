@@ -7,7 +7,7 @@ const LettersPage = () => {
 
   return (
     <div className='letters-page'>
-      <p className='instructions'>Selecciona tu carta para que la puedas descargar</p>
+      <p className='instructions'>Pulsa sobre tu carta para descargarla</p>
       <LetterCard setLetters={letters}/>
     </div>
   )
