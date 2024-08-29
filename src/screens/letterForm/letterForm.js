@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './letterForm.css';
+import Swal from 'sweetalert2';
 
 function LetterForm() {
     const [formData, setFormData] = useState({
@@ -47,11 +48,19 @@ function LetterForm() {
             console.log('Success:', result);
             setFormData({ addressee: '', letter: '' });
 
-            // Redirect to Spotify link after successful submission
-            window.location.href = "https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw";
+            // Show SweetAlert2 with a clickable link
+            Swal.fire({
+                title: 'Carta agregada!',
+                html: `Puedes descargarla como imagen para compartirla y escuchar la canción <b>{ Yellow }</b> <br/><a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw" target="_blank" rel="noopener noreferrer">Escuchar canción</a>`,
+                icon: 'success'
+            });
         } catch (error) {
             console.error('Error:', error.message);
-            alert(`Failed to add letter: ${error.message}`);
+            Swal.fire({
+                title: 'Error!',
+                text: `Failed to add letter: ${error.message}`,
+                icon: 'error'
+            });
         }
     };
 
