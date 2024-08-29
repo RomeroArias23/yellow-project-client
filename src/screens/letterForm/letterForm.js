@@ -46,7 +46,7 @@ function LetterForm() {
 
             console.log('Success:', result);
             setFormData({ addressee: '', letter: '' });
-            alert("Letter successfully added!");
+            alert("Carta agregada! Puedes descargarla como imagen para compartirla y escuchar la canción { Yellow } https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw");
         } catch (error) {
             console.error('Error:', error.message);
             alert(`Failed to add letter: ${error.message}`);
