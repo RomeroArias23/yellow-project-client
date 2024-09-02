@@ -48,10 +48,16 @@ function LetterForm() {
             console.log('Success:', result);
             setFormData({ addressee: '', letter: '' });
 
-            // Show SweetAlert2 with a clickable link
+            // Show SweetAlert2 with custom buttons
             Swal.fire({
                 title: 'Gracias por enviar tu carta!',
-                html: `Puedes buscar y descargar tu mensaje en la pestaña de Cartas. También puedes escuchar la canción <br/><a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw" target="_blank" rel="noopener noreferrer">{ Yellow }</a>`,
+                html: `
+                    <p style="color: grey;">Puedes buscar y descargar tu mensaje en la pestaña de Cartas.</p>
+                    <a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw" target="_blank" rel="noopener noreferrer">
+                        <button class="swal2-confirm swal2-styled" style="background-color: #3085d6; border: none;">Escuchar { YELLOW }</button>
+                    </a>
+                `,
+                showConfirmButton: false,
                 icon: 'success'
             });
         } catch (error) {
