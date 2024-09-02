@@ -65,7 +65,8 @@ function LetterForm() {
             Swal.fire({
                 title: 'Error!',
                 text: `Failed to add letter: ${error.message}`,
-                icon: 'error'
+                icon: 'error',
+                confirmButtonText: 'OK',
             });
         }
     };
