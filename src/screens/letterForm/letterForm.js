@@ -53,7 +53,7 @@ function LetterForm() {
                 title: 'Gracias por enviar tu carta!',
                 html: `
                     <p style="color: grey;">Puedes buscar y descargar tu mensaje en la pestaña de Cartas.</p>
-                    <a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=8UpoqXRiSPG8FlWAgNFFVw" target="_blank" rel="noopener noreferrer">
+                    <a href="https://onerpm.link/721046957373" target="_blank" rel="noopener noreferrer">
                         <button class="swal2-confirm swal2-styled" style="background-color: #3085d6; border: none;">Escuchar { YELLOW }</button>
                     </a>
                 `,
