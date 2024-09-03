@@ -7,7 +7,7 @@ const YELLOW = 'YELLOW';
 function CreditsScreen() {
   return (
     <div className="credits-container">
-      <a href="https://open.spotify.com/artist/3Vph1OYNirHJ7EOnRpGrNo?si=N5ux69HXRpCRnnGbAfXJ8A" target="_blank" rel="noopener noreferrer">
+      <a href="https://onerpm.link/721046957373" target="_blank" rel="noopener noreferrer">
         <img 
           src={yellowPlayerImage}
           alt="Portada de import { YELLOW }" 
