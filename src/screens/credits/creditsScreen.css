@@ -67,6 +67,11 @@ a {
     font-size: 0.9rem;
 }
 
+.text {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 90%;
