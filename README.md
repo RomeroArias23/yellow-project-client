@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Project { YELLOW }
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+The "{ YELLOW }" project is inspired by "The Unsent Project" and aims to collect unsent text messages to first loves. This web application allows users to anonymously express messages they could not send at the time. Additionally, the project helps promote a song produced and performed by me, which talks about a lost relationship.
 
-## Available Scripts
+### Visit the Project
+You can view and participate in the project here: [https://yellow-project.onrender.com](https://yellow-project.onrender.com)
 
-In the project directory, you can run:
+## How to Participate?
+You can participate in the project in the following ways:
+- **Write a Letter**: Visit our site and send your anonymous message.
+- **Contribute to the Code**: If you are a developer and wish to contribute to the project, you can propose changes or improvements to the code.
 
-### `npm start`
+## Technologies Used
+This project is developed using the following technologies and libraries:
+- React 18.3.1
+- Axios 1.7.2 for API calls.
+- React Router Dom 6.25.1 for navigation.
+- Testing Library for testing React components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
+Here are the main dependencies of the project:
+- `@fvilers/disable-react-devtools`: Used to disable React DevTools in production.
+- `@testing-library/jest-dom`, `@testing-library/react`, `@testing-library/user-event`: Used for unit and integration testing.
+- `axios`: Used to make HTTP requests to the API.
+- `html-to-image`: Used to convert HTML elements into images.
+- `react`, `react-dom`: Main React libraries for building the user interface.
+- `react-router-dom`: Used to manage routes in the application.
+- `react-scripts`, `web-vitals`: Tools and scripts for creating and optimizing the React application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Local Installation
+To test this project in your local environment, follow these steps:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```bash
+   git clone URL_OF_THE_REPOSITORY
+   cd client
