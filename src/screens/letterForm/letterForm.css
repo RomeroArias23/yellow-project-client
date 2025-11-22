@@ -1,19 +1,31 @@
 .container {
-    width: 400px;
+    width: 420px;
     height: auto;
-    background: url('../../global/yellow-texture.jpg');
+
+    /* background */
+    background-color: #FDEA6B; 
+    background-image: url('../../global/yellow-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;              /* forzar que cubra todo el contenedor */
+    background-position: center center;
+    background-attachment: local;        /* evita efectos raros de scroll */
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     display: flex;
     justify-content: center;
-    align-items: center; /* Center align items vertically */
+    align-items: center;
+
     border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+    padding: 18px;
 }
 
 .box {
-    width: 100%; /* Take up full width of the container */
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -28,8 +40,8 @@
 h3 {
     font-size: 25px;
     margin: 15px;
-    text-align: center; /* Center align text */
-    color:#eee
+    text-align: center;
+    color: #eee;
 }
 
 .addressee, .letter-box, .btn {
@@ -40,72 +52,42 @@ h3 {
 }
 
 .addressee input, .letter-box textarea, .btn button {
-    width: 90%; /* Take up most of the parent width */
-    padding: 20px 10px; /* Adjust padding for consistent look */
+    width: 90%;
+    padding: 18px 12px;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     outline: none;
     font-size: 18px;
-    background-color: #eee;
-    opacity: 40%;
+    background-color: rgba(255,255,255,0.85);
+    color: #111;
 }
 
 .letter-box textarea {
     height: 200px;
 }
 
-.button{
-    display: flex; /* Use flex to center button content */
-    justify-content: center; /* Center button content horizontally */
-    width: 100%; /* Ensure the button container takes full width */
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     align-items: center;
-    appearance: none;
 }
 
-.btn  {
-    display: flex; /* Use flex to center button content */
-    justify-content: center; /* Center button content horizontally */
-    width: 100%; /* Ensure the button container takes full width */
-    align-items: center;
-    appearance: none;
+.btn {
     background-color: #FCFCFD;
-    border-radius: 4px;
-    border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(45, 35, 66, 0.12) 0 2px 6px;
     color: #36395A;
     cursor: pointer;
-    display: flex; /* Ensure button is flex */
     height: 48px;
-    justify-content: center; /* Center button content */
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: center; /* Center text */
-    text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
+    padding: 0 18px;
     font-size: 18px;
-    width: auto; /* Adjust width to auto to fit the content */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn:focus {
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.btn:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    transform: translateY(-2px);
-}
-
-.btn:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
-}
+.btn:focus { outline: none; }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }

@@ -5,7 +5,6 @@ import LettersPage from './screens/lettersPage/lettersPage';
 import CreditsScreen from './screens/credits/creditsScreen';
 import Home from './screens/home/home';
 import Navbar from './components/navBar/navBar';
-import './global/globalStyles.css';
 
 function App() {
   return (

@@ -1,0 +1,24 @@
+/* src/global/globalStyles.css */
+* {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr / 100%;
+  place-items: center;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url("./background.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
