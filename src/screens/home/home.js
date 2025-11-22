@@ -6,14 +6,27 @@ const YELLOW = '{ YELLOW }'
 function Home() {
   return (
     <div className='text'>
-      <h1>{'{ YELLOW } Project'}</h1>
-      <p>El proyecto <strong>{ YELLOW }</strong> se inspira en el proyecto en inglés <strong><a href='https://theunsentproject.com/about'>The Unsent Project</a></strong>, esta aplicación tiene como objetivo recopilar mensajes de texto no enviados a primeros amores, permitiendo a quienes participen expresar de manera anónima mensajes que no pudieron enviar en su momento.</p>
+      <h1>{'{ YELLOW }'}</h1>
+      <p>Se inspira en <strong><a href='https://theunsentproject.com/about'>The Unsent Project</a></strong>, <strong>{ YELLOW }</strong> es un archivo que recopila mensajes de texto nunca enviados, permitiéndote expresar de manera anónima esas palabras que se quedaron atrapadas en el tiempo.</p>
 
-      <p>El término "primer amor" se deja abierto a la interpretación, permitiendo que los mensajes se dirijan a amantes, mejores amigos, ex parejas, padres o madres, hermanxs, e incluso mascotas. Todos los textos enviados son almacenados en un archivo en línea y son dedicados a un remitente. Si quieres saber si alguien escribió una carta con tu nombre, puedes buscarlo.</p>
+      <p><strong>¿A quién puedes escribir?</strong><br/>
+      No hay límites en el destinatario: amores del pasado o presente, amistades, familia, mascotas, lugares, objetos queridos, o versiones de ti mismo... cualquier ser o concepto significativo es válido para recibir tus palabras.</p>
 
-      <p><strong>{ YELLOW }</strong> busca proporcionar una vía emocional para quienes necesitan expresarse. Al enviar un mensaje a través de <strong>{ YELLOW }</strong> recibirás un enlace para escuchar la canción titulada <code>import { YELLOW } from './CVLTVRE'</code>. Una canción escrita a un amor perdido.</p>
+      <p><strong>¿Cómo funciona?</strong><br/>
+      Cada mensaje se almacena en nuestro archivo en línea y se dedica a un destinatario específico. Si quieres saber si alguien te escribió, puedes buscar tu nombre en la plataforma.</p>
 
-      <p>Te invito a participar y enviar ese mensaje que nunca pudiste enviar a tu primer amor. Forma parte de una comunidad que comparte experiencias y sentimientos por los que todas y todos hemos pasado.</p>
+      <p><strong>La experiencia { YELLOW }</strong><br/>
+      Al enviar tu mensaje, recibirás acceso a la canción <code>import { YELLOW } from './CVLTVRE'</code> - una composición musical que acompaña tu proceso emocional.</p>
+
+      <p><strong>Te invitamos a:</strong><br/>
+      Liberar ese mensaje que cargas contigo. Únete a una comunidad que entiende que todos tenemos palabras pendientes y que juntos creamos un mapa emocional de lo que pudo ser y no fue.</p>
+
+      <p><em>Porque algunas palabras merecen ser liberadas, aunque lleguen tarde.<br/>
+      Porque todos tenemos un { YELLOW } en el corazón.</em></p>
+
+      <div className="links">
+          <a href="https://discord.gg/yzXKJq8TDm" className="btn">💛 Únete a nuestra comunidad en Discord</a>
+      </div>
     </div>
   );
 }
