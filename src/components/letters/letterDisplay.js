@@ -30,7 +30,7 @@ const LettersDisplay = ({ letters }) => {
         <div className="waves_main-container w-container">
             <div className="waves_center-heading">
                 <div className="w-layout-grid waves_grid-features-6">
-                    {letters.map((letter, index) => (
+                    {[...letters].reverse().map((letter, index) => (
                         <div
                             className="waves_tile-features-6"
                             key={index}

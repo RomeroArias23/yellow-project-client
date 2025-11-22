@@ -66,14 +66,14 @@
 
 .watermark {
     position: absolute;
-    bottom: 10px; /* Adjust this value as needed */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
 
 .watermark-p {
-    font-size: 8px; /* Adjust font size as needed */
+    font-size: 8px; 
     color: rgba(255, 255, 255, 0.8); 
 }
 
