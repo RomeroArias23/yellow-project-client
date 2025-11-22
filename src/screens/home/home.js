@@ -21,9 +21,6 @@ function Home() {
       <p><strong>Te invitamos a:</strong><br/>
       Liberar ese mensaje que cargas contigo. Únete a una comunidad que entiende que todos tenemos palabras pendientes y que juntos creamos un mapa emocional de lo que pudo ser y no fue.</p>
 
-      <p><em>Porque algunas palabras merecen ser liberadas, aunque lleguen tarde.<br/>
-      Porque todos tenemos un { YELLOW } en el corazón.</em></p>
-
       <div className="links">
           <a href="https://discord.gg/yzXKJq8TDm" className="btn">💛 Únete a nuestra comunidad en Discord</a>
       </div>

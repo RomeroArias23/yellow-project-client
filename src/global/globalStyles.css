@@ -1,14 +1,24 @@
 /* src/global/globalStyles.css */
 * {
   font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   padding-top: 100px;
-  background-color: #000000;
-  background-image: url("./background.jpg"); /* ← ruta correcta */
-  display: grid;
   height: 100%;
-  grid-template: 1fr/100%;
+  display: grid;
+  grid-template: 1fr / 100%;
   place-items: center;
+  background-color: #000000;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("./background.jpg");
+  background-repeat: repeat;
+  background-size: 1024px;
+  background-blend-mode: multiply;
+
+  background-position: center;
 }
